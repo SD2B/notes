@@ -14,7 +14,7 @@ class ViewNoteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('View Note'),
+        title: Text(note.title),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -24,20 +24,24 @@ class ViewNoteScreen extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  note.title,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold,color: Colors.yellow),
-                ),
-              ),
-              Center(
-                child: Text(
                   'Timestamp: ${DateFormat('yyyy-MM-dd HH:mm:ss').format(note.timestamp)}',
                   style: TextStyle(fontSize: 14, color: Colors.grey),
                 ),
               ),
-              SizedBox(height: 10),
-              Text(
-                note.content,
-                style: TextStyle(fontSize: 18),
+              SizedBox(height: 20),
+              Container(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.grey,
+                ),
+
+                child: Text(
+                  note.content,
+                  style: TextStyle(fontSize: 18,color: Colors.black),
+                ),
               ),
             ],
           ),
