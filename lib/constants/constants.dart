@@ -6,19 +6,19 @@ final enabledBoarder = OutlineInputBorder(
 );
 final focusedBoarder = OutlineInputBorder(
   borderRadius: BorderRadius.circular(28),
-  borderSide: BorderSide(color: Colors.yellow, width: 3),
+  borderSide: BorderSide(color: maincolor, width: 3),
 );
 final errorBoarder = OutlineInputBorder(
   borderRadius: BorderRadius.circular(28),
-  borderSide: BorderSide(color: Colors.yellow, width: 3),
+  borderSide: BorderSide(color: maincolor, width: 3),
 );
 final focusedErrorBoarder = OutlineInputBorder(
   borderRadius: BorderRadius.circular(28),
-  borderSide: BorderSide(color: Colors.yellow, width: 3),
+  borderSide: BorderSide(color: maincolor, width: 3),
 );
 final labelStyle = TextStyle(
   color: Colors.white
 );
-final Color cursorColor= Colors.yellow;
+final Color cursorColor= maincolor;
 
-
+final Color maincolor=Color.fromRGBO(255, 238, 88, 100);

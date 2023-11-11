@@ -68,7 +68,7 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
                   Navigator.pop(context);
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.yellow, // Set the background color
+                  primary: maincolor, // Set the background color
                 ),
                 child: Text('Save',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
               ),
