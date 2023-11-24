@@ -39,6 +39,7 @@ dependencies:
   firebase_core: ^2.22.0
   cloud_firestore:
   intl: ^0.18.1
+  flutter_slidable: ^3.0.1
 
 
 
