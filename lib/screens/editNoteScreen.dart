@@ -1,10 +1,10 @@
 // EditNoteScreen.dart
 
 import 'package:flutter/material.dart';
-import 'package:notesapp/Model/noteModel.dart';
-import 'package:notesapp/constants/constants.dart';
-import 'package:notesapp/constants/customClass.dart';
-import 'package:notesapp/service/noteProvider.dart';
+import 'package:notes_app/Model/noteModel.dart';
+import 'package:notes_app/constants/constants.dart';
+import 'package:notes_app/constants/customClass.dart';
+import 'package:notes_app/service/noteProvider.dart';
 import 'package:provider/provider.dart';
 
 class EditNoteScreen extends StatefulWidget {
@@ -70,7 +70,11 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
                 style: ElevatedButton.styleFrom(
                   primary: maincolor, // Set the background color
                 ),
-                child: Text('Save',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                child: Text(
+                  'Save',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
               ),
             ],
           ),

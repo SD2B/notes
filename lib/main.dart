@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notesapp/firebase_options.dart';
-import 'package:notesapp/screens/noteListScreen.dart';
-import 'package:notesapp/service/noteProvider.dart';
+import 'package:notes_app/firebase_options.dart';
+import 'package:notes_app/screens/noteListScreen.dart';
+import 'package:notes_app/service/noteProvider.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 

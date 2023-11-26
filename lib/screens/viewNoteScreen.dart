@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:notesapp/Model/noteModel.dart';
-import 'package:notesapp/screens/editNoteScreen.dart';
-import 'package:notesapp/service/noteProvider.dart';
+import 'package:notes_app/Model/noteModel.dart';
+import 'package:notes_app/screens/editNoteScreen.dart';
+import 'package:notes_app/service/noteProvider.dart';
 import 'package:provider/provider.dart';
 
 class ViewNoteScreen extends StatelessWidget {
@@ -29,7 +29,7 @@ class ViewNoteScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Container(
-              height:MediaQuery.of(context).size.height/1.3,
+              height: MediaQuery.of(context).size.height / 1.3,
               child: SingleChildScrollView(
                 child: Text(
                   note.content,

@@ -69,6 +69,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '763369639853',
     projectId: 'notes-db0d8',
     storageBucket: 'notes-db0d8.appspot.com',
-    iosBundleId: 'com.example.notesapp',
+    iosBundleId: 'com.example.notes_app',
   );
 }

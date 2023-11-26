@@ -1,11 +1,10 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:notesapp/Model/noteModel.dart';
+import 'package:notes_app/Model/noteModel.dart';
 
 class NoteService {
-  CollectionReference _notesCollection = FirebaseFirestore.instance.collection('notes');
+  CollectionReference _notesCollection =
+      FirebaseFirestore.instance.collection('notes');
   List<NoteModel> _notes = [];
 
   List<NoteModel> get notes => _notes;
@@ -47,7 +46,6 @@ class NoteService {
     }
   }
 
-
   Future<void> fetchNotes() async {
     try {
       final notes = await _notesCollection.get();
@@ -59,7 +57,8 @@ class NoteService {
     }
   }
 
-  void notifyListeners() {} // Add this method to resolve the notifyListeners issue
+  void
+      notifyListeners() {} // Add this method to resolve the notifyListeners issue
 }
 
 class NoteProvider extends ChangeNotifier {
@@ -72,6 +71,7 @@ class NoteProvider extends ChangeNotifier {
     await _noteService.addNote(title, content);
     await fetchNotes(); // Refresh the notes list after adding a new note
   }
+
   void editNote(String noteId, String title, String content) async {
     await _noteService.editNote(noteId, title, content);
     await fetchNotes(); // Refresh the notes list after editing a note
@@ -88,4 +88,3 @@ class NoteProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
-

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
-import 'package:notesapp/Model/noteModel.dart';
-import 'package:notesapp/constants/constants.dart';
-import 'package:notesapp/constants/customClass.dart';
-import 'package:notesapp/screens/addNoteScreen.dart';
-import 'package:notesapp/screens/editNoteScreen.dart';
-import 'package:notesapp/screens/viewNoteScreen.dart';
-import 'package:notesapp/service/noteProvider.dart';
+import 'package:notes_app/Model/noteModel.dart';
+import 'package:notes_app/constants/constants.dart';
+import 'package:notes_app/constants/customClass.dart';
+import 'package:notes_app/screens/addNoteScreen.dart';
+import 'package:notes_app/screens/editNoteScreen.dart';
+import 'package:notes_app/screens/viewNoteScreen.dart';
+import 'package:notes_app/service/noteProvider.dart';
 import 'package:provider/provider.dart';
 
 class NoteListScreen extends StatefulWidget {
