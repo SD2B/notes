@@ -7,9 +7,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:763369639853:android:30f84d74d7a17995f19b24",
+        "mobilesdk_app_id": "1:763369639853:android:b5ac9fe5c4b99e13f19b24",
         "android_client_info": {
           "package_name": "com.example.notes_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1FB8LZ_17pXA4tlX0nKowDhcktccJIJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763369639853:android:30f84d74d7a17995f19b24",
+        "android_client_info": {
+          "package_name": "com.example.notesapp"
         }
       },
       "oauth_client": [],
